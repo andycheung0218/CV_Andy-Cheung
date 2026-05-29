@@ -1,0 +1,231 @@
+%!LW recipe=Build Job Market CV
+
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Tsz Chun CHEUNG, Andy} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +852 90602347 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{andycheung0218@hotmail.com}} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/andycheung0218}}  ~
+    % \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/andycheung0218}}
+    \vspace{-16pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Cornell University}{Sep 2025 -- May 2027}
+            {Master of Science in Applied Economics and Management}{Ithaca, United States}
+        \vspace{-3pt}
+        \resumeSubheading
+            {Hong Kong University of Science and Technology}{Sep 2021 -- May 2025}
+            {Bachelor of Science in Economics and Finance}{Clear Water Bay, Hong Kong}
+            \resumeItemListStart
+                \resumeItem{\textbf{GPA:} 3.78 $|$ \textbf{Honor:} Dean’s List, University's Scholarship Scheme for Continuing Undergraduate Students}
+                \resumeItem{\textbf{Relevant Courses:} Intermediate Microeconomics, Intermediate Macroeconomics, Econometrics, Multivariable Calculus, Linear Algebra, Mathematical Analysis, Monetary Economics, Urban and Environmental Economics, Intermediate Investment, Derivative Securities, Fixed Income Securities, Machine Learning for Economic and Financial Analysis}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experiences}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Hong Kong Monetary Authority}{Jun 2024 -- Aug 2024}
+            {Summer Intern, Economic Research Division}{Central, Hong Kong}
+            \resumeItemListStart
+                \resumeItem{Conducted a research project on Chinese Housing Market Sentiment under supervision of an Economist, involving:}
+                \begin{itemize}[label=$\circ$]
+                    \item Developed a text mining model using prompt engineering and machines learning metrics with the in-house LLM
+                    \item Processed and filtered nearly 200,000 Weibo posts to create daily sentiment index for Chinese housing market from 2021 to present using the designed model
+                    \item Employed time series analysis, including Granger causality tests, to demonstrate the index’s predictive power on the floor space sold growth in China 
+                \end{itemize}
+                \resumeItem{Assisted an Assistant Economist with data surveillance and analysis of China’s pension system:}
+                \begin{itemize}[label=$\circ$]
+                    \item Updated China's pension asset allocation data via Wind Terminal
+                    \item Conducted research on the asset allocation of pension fund, identifying low investment levels in Hong Kong equities
+                    \item Explored potential policy implications for stimulating pension fund investment overseas
+                \end{itemize}
+            \resumeItemListEnd
+        \resumeSubheading
+            {Foresight Fund Management Co., Ltd}{Jun 2023 -- July 2023}
+            {Institutional Service Intern, Industry Research}{Shanghai, China}
+            \resumeItemListStart
+                \resumeItem{Conducted comprehensive industry research on the AIGC value chain, analyzing key players (e.g., Nvidia, Microsoft)}
+                \resumeItem{Analyzed 30+ research reports, financial statements, and market data (e.g., size, share) across diverse AIGC sectors}
+                \resumeItem{Developed a comprehensive AIGC industry profile through SWOT analysis}
+                \resumeItem{Presented research findings to institutional clients, earning high commendation within the department}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Research Projects}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {HKUST Undergraduate Research Opportunity Project}{Feb 2023 -- May 2024}
+            {Undergraduate Research Assistant}{Clear Water Bay, Hong Kong}
+            \resumeItemListStart
+                \resumeItem{Participated in the research project on ``Measuring Product Market Competition'' and ``Dissecting ESG shocks''}
+                \resumeItem{Helped organize large datasets and ran preliminary statistical analyses on the cleaned-up data using Python}\
+                \resumeItem{Backtracked and classified ESG incidents based on relatively little information}
+            \resumeItemListEnd
+        \resumeSubheading
+            {Prediction of P2P Lending Default Using Machine Learning Methods}{Sep 2023 -- Dec 2023}
+            {Team Leader}{Clear Water Bay, Hong Kong}
+            \resumeItemListStart
+                \resumeItem{Preprocessed P2P lending data from Bondora containing more than 179 million observations and 112 features using KNN Imputer and Recursive Feature Elimination}
+                \resumeItem{Developed and optimized several machine learning models including Logistic Regression, Random Forest, and Extreme Gradient Boosting Model to predict P2P lending default}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Activities}
+    \resumeSubHeadingListStart
+        \resumeSubheading{J.P. Morgan Private Bank Challenge}{Mar 2023 -- Apr 2023}{Member}{Hong Kong}
+            \resumeItemListStart
+                \resumeItem{Conducted research on over 100 different equity and fixed-income assets using Refinitiv Eikon}
+                \resumeItem{Utilized Markowitz Model to construct a short-run asset portfolio consisted of selected equity and fixed-income assets}
+                \resumeItem{Designed a strategic asset allocation with total value up to US\$225 million for a virtual high-net-worth client}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+ \vspace{-16pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+    \begin{itemize}[leftmargin=0.1in, label={}]
+        \small{\item{
+            \textbf{Technical Skills}{: Python, R, VS Code, Refinitiv Eikon, Microsoft Office, Wind Terminal, Bloomberg} \\
+            \textbf{Languages}{: Mandarin (Native), English (Fluent, with 110/120 in TOEFL iBT), Cantonese (Basic)} \\}}
+        \end{itemize}
+
+
+\end{document}

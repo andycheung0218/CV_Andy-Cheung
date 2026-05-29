@@ -1,0 +1,59 @@
+{
+  "latex-workshop.latex.outDir": "%DIR%",
+  "latex-workshop.latex.auxDir": "%DIR%/build",
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.autoBuild.run": "never",
+  "latex-workshop.latex.build.rootfileInStatus": true,
+  "files.exclude": {
+    "**/*.synctex.gz": true
+  },
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "Build Academic CV",
+      "tools": [
+        "latexmk-academic-cv"
+      ]
+    },
+    {
+      "name": "Build Job Market CV",
+      "tools": [
+        "latexmk-job-market-cv"
+      ]
+    }
+  ],
+
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk-academic-cv",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-emulate-aux-dir",
+        "-outdir=%OUTDIR%",
+        "-auxdir=%AUXDIR%",
+        "-jobname=Andy_Cheung_Academic_CV",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "latexmk-job-market-cv",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-emulate-aux-dir",
+        "-outdir=%OUTDIR%",
+        "-auxdir=%AUXDIR%",
+        "-jobname=Andy_Cheung_Job_Market_CV",
+        "%DOC%"
+      ],
+      "env": {}
+    }
+  ]
+}

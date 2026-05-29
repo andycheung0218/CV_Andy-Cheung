@@ -1,0 +1,245 @@
+%!LW recipe=Build Academic CV
+
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{lmodern}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabularx}{\textwidth}[t]{>{\raggedright\arraybackslash}X r} % <-- 修改这一行
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabularx}\vspace{-7pt} % <-- 修改这一行
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Tsz Chun CHEUNG, Andy} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +852 90602347 ~ \href{andycheung0218@hotmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{andycheung0218@hotmail.com}} ~ 
+    \href{https://www.linkedin.com/in/andycheung0218/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/andycheung0218}}  ~
+    % \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/andycheung0218}}
+    \vspace{-16pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Cornell University}{Sep 2025 -- May 2027}
+            {Master of Science in Applied Economics and Management}{Ithaca, United States}
+            \resumeItemListStart
+                \resumeItem{\textbf{Relevant Courses:} Production Economics, Causal Inference, Applied Econometrics, Empirical Methods for Applied Economists}
+            \resumeItemListEnd
+        \vspace{-3pt}
+        \resumeSubheading
+            {Hong Kong University of Science and Technology}{Sep 2021 -- May 2025}
+            {Bachelor of Science in Economics and Finance (First Class Honors)}{Clear Water Bay, Hong Kong}
+            \resumeItemListStart
+                \resumeItem{\textbf{GPA:} 3.78 $|$ \textbf{Honor:} Dean’s List, University's Scholarship Scheme for Continuing Undergraduate Students}
+                \resumeItem{\textbf{Relevant Courses:} Intermediate Microeconomics, Intermediate Macroeconomics, Econometrics, Multivariable Calculus, Linear Algebra, Mathematical Analysis, Monetary Economics, Urban and Environmental Economics, Intermediate Investment, Derivative Securities, Fixed Income Securities, Machine Learning for Economic and Financial Analysis}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experiences}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Hong Kong Monetary Authority}{Jun 2024 -- Aug 2024}
+            {Summer Intern, Economic Research Division}{Central, Hong Kong}
+            \resumeItemListStart
+                \resumeItem{Conducted a research project on Chinese Housing Market Sentiment under supervision of an Economist, involving:}
+                \begin{itemize}[label=$\circ$]
+                    \item Developed a text mining model using prompt engineering and machines learning metrics with the in-house LLM
+                    \item Processed and filtered nearly 200,000 Weibo posts to create daily sentiment index for Chinese housing market from 2021 to present using the designed model
+                    \item Employed time series analysis, including Granger causality tests, to demonstrate the index’s predictive power on the floor space sold growth in China 
+                \end{itemize}
+                \resumeItem{Assisted an Assistant Economist with data surveillance and analysis of China’s pension system:}
+                \begin{itemize}[label=$\circ$]
+                    \item Updated China's pension asset allocation data via Wind Terminal
+                    \item Conducted research on the asset allocation of pension fund, identifying low investment levels in Hong Kong equities
+                    \item Explored potential policy implications for stimulating pension fund investment overseas
+                \end{itemize}
+            \resumeItemListEnd
+        \resumeSubheading
+            {Foresight Fund Management Co., Ltd}{Jun 2023 -- July 2023}
+            {Institutional Service Intern, Industry Research}{Shanghai, China}
+            \resumeItemListStart
+                \resumeItem{Conducted comprehensive industry research on the AIGC value chain, analyzing key players (e.g., Nvidia, Microsoft)}
+                \resumeItem{Analyzed 30+ research reports, financial statements, and market data (e.g., size, share) across diverse AIGC sectors}
+                \resumeItem{Developed a comprehensive AIGC industry profile through SWOT analysis}
+                \resumeItem{Presented research findings to institutional clients, earning high commendation within the department}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Research Experiences}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {HKUST Undergraduate Research Opportunity Project}{Feb 2023 -- May 2024}
+            {Undergraduate Research Assistant}{Clear Water Bay, Hong Kong}
+            \resumeItemListStart
+                \resumeItem{Participated in the research project on ``Measuring Product Market Competition'' and ``Dissecting ESG shocks''}
+                \resumeItem{Helped organize large datasets and ran preliminary statistical analyses on the cleaned-up data using Python}\
+                \resumeItem{Backtracked and classified ESG incidents based on relatively little information}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+\section{Research Output}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Sentiment and Housing Policy Effectiveness in China: Evidence from a GPT-Driven Text Mining Approach}{Sep 2024 -- May 2025}{Advisor: Prof. Lu Yang}{Bachelor Honor Thesis}
+        \resumeItemListStart
+            \resumeItem{\textbf{Abstract:} This study investigates how public sentiment affects housing market policy effectiveness in China by introducing two methodological innovations. Firstly, it develops a GPT-driven text mining model to construct a housing market sentiment index from Weibo posts, achieving over 80\% classification accuracy while reducing technical barriers. Secondly, it employs a smooth transition local projection method to examine how policy transmission varies across sentiment growth and dispersion regimes. Using monthly data from 2019 to 2024, analysis reveals contractionary mortgage rate policies yield significantly different outcomes. During positive sentiment growth, a 100 basis point increase in mortgage rate leads to a 0.35 percentage point increase in housing price return after eight months. Similarly, during high sentiment dispersion, a 100 basis point increase in mortgage rate leads to a 0.26 percentage point increase in housing price return. Conversely, policies are effective during negative sentiment growth or low dispersion, with same policy reducing housing price return by 0.87 and 0.55 percentage point respectively. These differential effects become statistically significant 7-9 months after implementation and are robust. Findings suggest policymakers should consider sentiment dynamics, as conventional policies may be counterproductive under optimistic growth or high disagreement.}
+            \resumeItem{\textbf{Keywords:} Text Mining, Sentiment Analysis, Housing Market Policy Effectiveness, Local Projection, Sentiment Dispersion}
+            \resumeItem{\textbf{Award:} Honor Thesis Award Gold Medal}
+        \resumeItemListEnd
+        \resumeSubheading{Prediction of P2P Lending Default Using Machine Learning Methods}{Sep 2023 -- Dec 2023}{Advisor: Prof. Ng Chi Yung}{Bachelor Graduation Thesis}
+        \resumeItemListStart
+            \resumeItem{\textbf{Abstract:} This study investigates machine learning's efficiency in predicting borrower default risk compared to traditional methods using pre-loan auction data. Logistic Regression, Random Forest, and Extreme Gradient Boosting Model were developed and optimized for recall using Bondora's P2P lending dataset. The random forest model achieved 97\% recall, outperforming Bondora's existing model, highlighting the potential of machine learning in enhancing risk prediction and promoting sustainable lending practices.}
+            \resumeItem{\textbf{Keywords:} Machine Learning, Logistic Regression, Random Forest, Extreme Gradient Boosting, P2P Lending, Default Risk}
+        \resumeItemListEnd
+        
+        
+    \resumeSubHeadingListEnd
+%-----------INVOLVEMENT---------------
+\section{Activities}
+    \resumeSubHeadingListStart
+        \resumeSubheading{J.P. Morgan Private Bank Challenge}{Mar 2023 -- Apr 2023}{Member}{Hong Kong}
+            \resumeItemListStart
+                \resumeItem{Conducted research on over 100 different equity and fixed-income assets using Refinitiv Eikon}
+                \resumeItem{Utilized Markowitz Model to construct a short-run asset portfolio consisted of selected equity and fixed-income assets}
+                \resumeItem{Designed a strategic asset allocation with total value up to US\$225 million for a virtual high-net-worth client}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+ \vspace{-16pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+    \begin{itemize}[leftmargin=0.1in, label={}]
+        \small{\item{
+            \textbf{Programming \& Analytics}{: Python, R, Stata} \\
+            \textbf{Productivity \& Dev Tools}{: VS Code, LaTeX, Microsoft Office} \\
+            \textbf{Financial Data Terminals}{: Bloomberg, Refinitiv Eikon, Wind Terminal, S\&P Capital IQ Pro} \\
+            \textbf{Languages}{: Mandarin (Native), English (Fluent, TOEFL: 110), Cantonese (Basic)} \\}}
+        \end{itemize}
+
+
+\end{document}
